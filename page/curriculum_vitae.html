@@ -1,0 +1,310 @@
+
+<!-- saved from url=(0042)file:///F:/blog/page/curriculum_vitae.html -->
+<html class="cye-disabled cye-lm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>简历模板</title>
+    <link rel="stylesheet" href="./curriculum_vitae_files/base.css" media="screen and (min-width: 840px)">
+    <link rel="stylesheet" href="file:///F:/blog/page/style.css" media="screen and (max-width: 839px)">
+<style id="nightModeStyle">
+html.cye-enabled.cye-nm:not(*:-webkit-full-screen) body,
+ html.cye-enabled.cye-nm:not(*:-webkit-full-screen) #cye-workaround-body {-webkit-filter:contrast(91%) brightness(84%) invert(1);}</style><style id="cyebody">html.cye-enabled.cye-lm body{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyediv">html.cye-enabled.cye-lm div{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyetable">html.cye-enabled.cye-lm th{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}html.cye-enabled.cye-lm td{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyetextInput">html.cye-enabled.cye-lm input[type=text]{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}html.cye-enabled.cye-lm textarea{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeselect">html.cye-enabled.cye-lm select{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeul">html.cye-enabled.cye-lm ul{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style id="cyeChangeByClick">html.cye-enabled.cye-lm .cye-lm-tag,html.cye-enabled.cye-lm.cye-lm-tag{background-color:#cce8cf !important;border-color:rgb(51, 58, 51) !important;background-image:none !important;color:#000000  !important}</style><style type="text/css" abt="234"></style><script>//remove 17173 video ad
+doAdblock();
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://swf.adtchrome.com/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+//remove baidu search ad
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var aa = function(){
+            var all = document.body.querySelectorAll("#content_left div,#content_left table");
+            for(var i = 0; i < all.length; i++){
+                if(/display:\s?(table|block)\s!important/.test(all[i].getAttribute("style"))){all[i].style.display= "none";all[i].style.visibility='hidden';}
+            }
+            all = document.body.querySelectorAll('.result.c-container[id="1"]');
+            //if(all.length == 1) return;
+            for(var i = 0; i < all.length; i++){
+                if(all[i].innerHTML && all[i].innerHTML.indexOf('广告')>-1){
+                    all[i].style.display= "none";all[i].style.visibility='hidden';
+                }
+            }
+        }
+        aa();
+        document.getElementById('wrapper_wrapper').addEventListener('DOMSubtreeModified',aa)
+    };
+}
+//remove sohu video ad
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+//remove 56.com video ad
+if (document.URL.indexOf("56.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+//fore iqiyi enable html5 player function
+if (document.URL.indexOf("iqiyi.com") >= 0){
+    if (document.cookie.indexOf("player_forcedType=h5_VOD")==-1){
+        document.cookie='player_forcedType=h5_VOD'
+        if(localStorage.reloadTime && Date.now() - parseInt(localStorage.reloadTime)<60000){
+            console.log('no reload')
+        }else{
+            location.reload()
+            localStorage.reloadTime = Date.now();
+        }
+    }
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body style="">
+
+<div id="top">
+    <span class="top-title">简历模板</span>
+</div>
+<div id="wrapper">
+    <div class="header">
+        <div class="header-title">
+            <span class="author-name">深圳_hadoop开发_3年——晏月</span>
+            <span class="author-intro"></span>
+        </div>
+        <div class="header-list">
+            <div class="header-left">
+                <ul>
+                    <li>联系方式： 18171294155</li>
+                    <li>邮箱： <a href="mailto:517449331@qq.com">517449331@qq.com</a></li>
+                    <li>学历： 本科</li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>期望职位： 大数据开发工程师</li>
+                    <li>期望城市： 深圳（优先），北杭（考虑）</li>
+                    <li>当前坐标： 深圳</li>
+                </ul>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+    <div class="person-info">
+        <span class="icon"></span>
+        <span class="subtitle">个人信息</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <div class="info-left">
+                <span>专业： 计算机科学与技术</span>
+                <span>学校： 武汉科技大学中南分校</span>
+                <span>出生年月： 1993.11.25</span>
+            </div>
+            <div class="info-right">
+                
+                <span>工作年限： 3年</span><span>GitHub： <a href="https://github.com/yanxingzhi">https://github.com/yanxingzhi</a></span>
+                
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+    <div class="pro-skill">
+        <span class="icon"></span>
+        <span class="subtitle">技能清单</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <ul>
+                <li>熟悉MapReduce原理，熟练使用Java开发和优化MapReduce </li>
+                <li>熟悉Storm 、Hbase、Hive、Flume、Kafka、Mahout等Hadoop框架及工具 </li>
+                <li>熟悉Spark工作流程，能看懂Spark部分源码，能使用scala编写Application </li>
+                
+    <li>精通OLTP系统的开发，熟悉SSM框架，能够进行源码级改造。</li>
+    
+    
+            </ul>
+        </div>
+    </div>
+
+    <div class="work-experience">
+        <span class="icon"></span>
+        <span class="subtitle">工作经历</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <div class="company">
+                <h2>拇指游玩科技有限公司</h2>
+                <span class="tools">后端主程</span>
+
+                <span class="project-title">xxx项目</span>
+                <span class="project-intro">
+                    我在此项目负责了哪些工作，这个项目中，有什么里给我最深刻的印象，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+                </span>
+            </div>
+
+            <div class="company">
+                <h2>XX公司（xxxx年xx月-xxxx年xx月）</h2>
+                <span class="tools">开发工具： xxx + xxxx + xxx + xxxxx + xxxx </span>
+
+                <span class="project-title">xxx项目</span>
+                <span class="project-intro">
+                    我在此项目负责了哪些工作，这个项目中，有什么里给我最深刻的印象，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="open-source">
+        <span class="icon"></span>
+        <span class="subtitle">工作项目或作品</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <ul>
+                <li>
+                    <span class="source-name">项目名称：xxxx</span><br>
+                    <span>一款使用Spring Framework + AngularJS写的单页应用博客系统，使用MyBatis作为ORM框架，写作语法支持Markdown。部署在阿里云的CentOS服务器上，使用Nginx作的权限控制和端口转发。</span>
+                    <span class="source-url">源代码地址：<a href="http://www.17sucai.com/preview/1240142/2018-11-07/resume/index.html#">www.xxxxxx.com</a></span>
+                </li>
+                <li>
+                    <span class="source-name">项目名称：xxxx</span><br>
+                    <span>里边存放了从开始学写代码后的一些记录，ACM刷题、Java学习、Android学习、框架以及其他的学习，并有使用JS、Java、Android写过的一些小东西。</span>
+                    <span class="source-url">地址：<a href="http://www.17sucai.com/preview/1240142/2018-11-07/resume/index.html#">www.xxxxxx.com</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="honor-eva">
+        <div class="self-evaluation">
+            <span class="icon"></span>
+            <span class="subtitle">自我评价</span>
+            <span class="long-line short-line"></span>
+            <div class="detail-list">
+                <ul>
+                    <li>喜欢学习新东西，善于折腾</li>
+                    <li>工作认真，细心，有很强的责任感</li>
+                    <li>良好的语言沟通能力，能够积极主动交流以便解决问题</li>
+                    <li>性格外向开朗，喜欢运动，喜欢打篮球，能够独立解决问题</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="honor-reward">
+            <span class="icon"></span>
+            <span class="subtitle">荣誉奖励</span>
+            <span class="long-line short-line"></span>
+            <div class="detail-list">
+                <ul>
+                    <li>XXXXXXXXXXXXXXXXXXXX</li>
+                    <li>XXXXXXXXXXXXXXXXXXXX</li>
+                    <li>XXXXXXXXXXXXXXXXXXXX</li>
+                    <li>XXXXXXXXXXXXXXXXXXXXX</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clear-fix"></div>
+    </div>
+<span>个人网站： <a href="https://yanxingzhi.github.io/blog/index.html">https://yanxingzhi.github.io/blog/index.html</a></span></div>
+
+<script type="text/javascript">
+    var windowWidth =  document.body.clientWidth;
+    var templateWidth = 320;
+
+    if(windowWidth < 840) {
+        var calcFontSize = (windowWidth) / templateWidth * 14 + "px";
+
+        document.getElementsByTagName("html")[0].style.fontSize = calcFontSize;
+    }
+</script>
+
+
+<div id="cyeBlackMaskLayer" style="background-color: rgb(19, 19, 19); position: fixed; width: 1980px; height: 1080px; z-index: -2147483648;"></div></body></html>
