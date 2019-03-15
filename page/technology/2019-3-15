@@ -1,0 +1,20 @@
+<div>
+<h2>常用linux</h2>
+	磁盘：
+		df -h
+	内存：
+		free -m
+	cpu： 
+		top
+	进程：
+		ps -ef | grep java | grep -v grep | awk '${print $2}'
+	网络：
+		ifconfig
+		netstat -pan | grep 8080
+	文件：	lsof | grep -i deleted
+		find / -name jdk1.8
+		find / -type f -size +100M
+<h2>springboot</h2>
+	远程调试：
+		java -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=7005,server=y,suspend=n -jar shop_webpay-2.9.war --spring.profiles.active=stg
+</div>
