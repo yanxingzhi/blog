@@ -2,11 +2,24 @@
 <html>
 <head>
 <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<title>big data——a top-down approach</title>
 </head>
 <div id="config">
+	<div>
+		场景：如果我们需要处理1PB数据，根据现在主流的硬盘（500GB~2TB），大约需要512台带一个硬盘的普通PC。
+		问：为什么需要GFS？
+		答：谷歌在传统的数据服务器（也叫做数据库）的用户数据增长上面临问题.所以需要GFS
+		质疑：<a href="https://stackoverflow.com/questions/21420879/mysql-cluster-vs-hadoop-for-handling-big-data">mysql clusters is better than hadoop，why we need hadoop rather than mysql clusters？</a>
+		举证：<a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-cluster-limitations-limits.html">The total maximum number of nodes in an NDB Cluster is 255</a>
+		新闻：<a href="https://www.cnet.com/news/google-spotlights-data-center-inner-workings/">数据库厂商满足谷歌公司的需求，费用太贵了。（Commercial databases from companies such as Oracle and IBM don't cut the mustard here. For one thing, they don't operate the scale Google demands, and if they did, they'd be too expensive, Dean said.)</a>
+	</div>
+	<div><h3>reference</h3>
 	<ul>
 	<li><a href="https://projects.apache.org/projects.html?category#big-data">apache big data</a></li>
+	<li><a href="https://en.wikipedia.org/wiki/Distributed_computing">distributed computing</a>
+	<li><a href="https://en.wikipedia.org/wiki/Google_File_System">gfs</a>
 	</ul>
+	</div>
 </div>
 <script>
 	var vm = new Vue({
